@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [CrossBrowserTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testscript.ManageCategoryTest">
+        <methods>
+          <include name="verifyNewCategoryCreation"/>
+          <include name="browserQuitandClose"/>
+          <include name="browserInitialization"/>
+        </methods>
+      </class> <!-- testscript.ManageCategoryTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
   <test thread-count="5" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
@@ -11,13 +23,6 @@
           <include name="browserInitialization"/>
         </methods>
       </class> <!-- testscript.ManageCategoryTest -->
-      <class name="testscript.AdminUsersTest">
-        <methods>
-          <include name="verifyNewAdminUserCreation"/>
-          <include name="browserQuitandClose"/>
-          <include name="browserInitialization"/>
-        </methods>
-      </class> <!-- testscript.AdminUsersTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserTesting] -->

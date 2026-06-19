@@ -56,11 +56,12 @@ public class Base {
 	 */
 	
 	@AfterMethod
-	public void browserQuit(ITestResult iTestResult) throws IOException {
+	public void browserQuitandClose(ITestResult iTestResult) throws IOException {
 	    if (iTestResult.getStatus() == ITestResult.FAILURE) {
 	        ScreenshotUtility screenShot = new ScreenshotUtility(); // creating obj
 	        screenShot.getScreenShot(driver, iTestResult.getName());
 	    }
+	    driver.quit();
 	}
 
 }

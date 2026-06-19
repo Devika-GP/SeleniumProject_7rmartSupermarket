@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.ManageCategoryPage;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class ManageCategoryTest extends Base {
 
@@ -19,8 +20,11 @@ public class ManageCategoryTest extends Base {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.verifyLogin(username, password);
 
-		String categoryname = ExcelUtility.getStringData(1, 0, "categorypage");
-
+		//String categoryname = ExcelUtility.getStringData(1, 0, "categorypage");
+		
+		FakerUtility fakerutility = new FakerUtility();
+		String categoryname = fakerutility.generateCategory();
+		
 		ManageCategoryPage category = new ManageCategoryPage(driver);
 		category.navigateToManageCategoryPage();
 		category.createNewCategory(categoryname);

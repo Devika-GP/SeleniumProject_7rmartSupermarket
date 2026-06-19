@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 18 12:15:28 IST 2026</td>
+<td>Started on:</td><td>Fri Jun 19 13:33:38 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>131 seconds (131570 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56903 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,175 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testscript.ManageCategoryTest.verifyNewCategoryCreation()'><b>verifyNewCategoryCreation</b><br>Test class: testscript.ManageCategoryTest<br>Test method: Verify that a new category/product can be added successfully with its image</td>
-<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (334, 731) is out of bounds of viewport dimensions (1280, 667)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0a501bf8-7453-4852-9bc4-4feabd3defe5, actions {actions=[org.openqa.selenium.interactions.Sequence@22ead351]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 152.0, moz:accessibilityChecks: false, moz:buildID: 20260610172436, moz:geckodriverVersion: 0.37.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31184, moz:profile: C:\Users\DEVIKA\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 0a501bf8-7453-4852-9bc4-4feabd3defe5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:651)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at utilities.PageUtility.clickmethod(PageUtility.java:45)
-	at pages.ManageCategoryPage.createNewCategory(ManageCategoryPage.java:50)
-	at testscript.ManageCategoryTest.verifyNewCategoryCreation(ManageCategoryTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1372238985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1372238985'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (334, 731) is out of bounds of viewport dimensions (1280, 667)
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0a501bf8-7453-4852-9bc4-4feabd3defe5, actions {actions=[org.openqa.selenium.interactions.Sequence@22ead351]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 152.0, moz:accessibilityChecks: false, moz:buildID: 20260610172436, moz:geckodriverVersion: 0.37.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 31184, moz:profile: C:\Users\DEVIKA\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 0a501bf8-7453-4852-9bc4-4feabd3defe5
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:651)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at utilities.PageUtility.clickmethod(PageUtility.java:45)
-	at pages.ManageCategoryPage.createNewCategory(ManageCategoryPage.java:50)
-	at testscript.ManageCategoryTest.verifyNewCategoryCreation(ManageCategoryTest.java:26)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>testscript.ManageCategoryTest@305b7c14</td></tr>
-<tr>
-<td title='testscript.AdminUsersTest.verifyNewAdminUserCreation()'><b>verifyNewAdminUserCreation</b><br>Test class: testscript.AdminUsersTest<br>Test method: Verify that a new user can be created successfully</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: div.alert.alert-success.alert-dismissible
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [29c8f3f2-c052-4d02-a52f-5797fe25e109, findElement {value=div.alert.alert-success.alert-dismissible, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 152.0, moz:accessibilityChecks: false, moz:buildID: 20260610172436, moz:geckodriverVersion: 0.37.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 280, moz:profile: C:\Users\DEVIKA\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 29c8f3f2-c052-4d02-a52f-5797fe25e109
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isUserSavedAlertDisplayed(AdminUsersPage.java:47)
-	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1383031847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1383031847'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: div.alert.alert-success.alert-dismissible
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [29c8f3f2-c052-4d02-a52f-5797fe25e109, findElement {value=div.alert.alert-success.alert-dismissible, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 152.0, moz:accessibilityChecks: false, moz:buildID: 20260610172436, moz:geckodriverVersion: 0.37.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 280, moz:profile: C:\Users\DEVIKA\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 29c8f3f2-c052-4d02-a52f-5797fe25e109
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at pages.AdminUsersPage.isUserSavedAlertDisplayed(AdminUsersPage.java:47)
-	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:30)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>6</td>
-<td>testscript.AdminUsersTest@6913c1fb</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -245,45 +76,55 @@ Session ID: 29c8f3f2-c052-4d02-a52f-5797fe25e109
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.LogoutTest.verifySuccessfulLogout()'><b>verifySuccessfulLogout</b><br>Test class: testscript.LogoutTest<br>Test method: Verify that a logged-in user can log out successfully</td>
-<td></td>
-<td>1</td>
-<td>testscript.LogoutTest@17f7cd29</td></tr>
-<tr>
-<td title='testscript.ManageContactTest.verifyEditContact()'><b>verifyEditContact</b><br>Test class: testscript.ManageContactTest<br>Test method: Verify that contact information can be edited successfully</td>
-<td></td>
-<td>2</td>
-<td>testscript.ManageContactTest@66d18979</td></tr>
-<tr>
-<td title='testscript.ManageFooterTextTest.verifyEditFooterText()'><b>verifyEditFooterText</b><br>Test class: testscript.ManageFooterTextTest<br>Test method: Verify that the footer text can be edited successfully</td>
-<td></td>
-<td>2</td>
-<td>testscript.ManageFooterTextTest@609cd4d8</td></tr>
-<tr>
-<td title='testscript.LoginTest.verifyValidUsernameAndInvalidPassword()'><b>verifyValidUsernameAndInvalidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Check whether the system prevents login with valid username and invalid password</td>
+<td title='testscript.LoginTest.verifyInvalidUsernameAndInvalidPassword()'><b>verifyInvalidUsernameAndInvalidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Check whether the system prevents login with invalid username and invalid password</td>
 <td></td>
 <td>0</td>
-<td>testscript.LoginTest@7d8704ef</td></tr>
+<td>testscript.LoginTest@33c911a1</td></tr>
+<tr>
+<td title='testscript.LogoutTest.verifySuccessfulLogout()'><b>verifySuccessfulLogout</b><br>Test class: testscript.LogoutTest<br>Test method: Verify that a logged-in user can log out successfully</td>
+<td></td>
+<td>0</td>
+<td>testscript.LogoutTest@399c4be1</td></tr>
 <tr>
 <td title='testscript.LoginTest.verifyValidUsernameAndValidPassword()'><b>verifyValidUsernameAndValidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Verify that a user can successfully log in with a valid username and valid password</td>
 <td></td>
 <td>0</td>
-<td>testscript.LoginTest@7d8704ef</td></tr>
+<td>testscript.LoginTest@33c911a1</td></tr>
 <tr>
-<td title='testscript.LoginTest.verifyInvalidUsernameAndInvalidPassword()'><b>verifyInvalidUsernameAndInvalidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Check whether the system prevents login with invalid username and invalid password</td>
+<td title='testscript.AdminUsersTest.verifyNewAdminUserCreation()'><b>verifyNewAdminUserCreation</b><br>Test class: testscript.AdminUsersTest<br>Test method: Verify that a new user can be created successfully</td>
+<td></td>
+<td>1</td>
+<td>testscript.AdminUsersTest@707194ba</td></tr>
+<tr>
+<td title='testscript.ManageContactTest.verifyEditContact()'><b>verifyEditContact</b><br>Test class: testscript.ManageContactTest<br>Test method: Verify that contact information can be edited successfully</td>
+<td></td>
+<td>2</td>
+<td>testscript.ManageContactTest@1190200a</td></tr>
+<tr>
+<td title='testscript.ManageCategoryTest.verifyNewCategoryCreation()'><b>verifyNewCategoryCreation</b><br>Test class: testscript.ManageCategoryTest<br>Test method: Verify that a new category/product can be added successfully with its image</td>
+<td></td>
+<td>3</td>
+<td>testscript.ManageCategoryTest@75db5df9</td></tr>
+<tr>
+<td title='testscript.LoginTest.verifyValidUsernameAndInvalidPassword()'><b>verifyValidUsernameAndInvalidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Check whether the system prevents login with valid username and invalid password</td>
 <td></td>
 <td>0</td>
-<td>testscript.LoginTest@7d8704ef</td></tr>
+<td>testscript.LoginTest@33c911a1</td></tr>
+<tr>
+<td title='testscript.ManageNewsTest.verifyNewNewsCreation()'><b>verifyNewNewsCreation</b><br>Test class: testscript.ManageNewsTest<br>Test method: “Verify that a new news item can be created successfully</td>
+<td></td>
+<td>1</td>
+<td>testscript.ManageNewsTest@6a2f6f80</td></tr>
+<tr>
+<td title='testscript.ManageFooterTextTest.verifyEditFooterText()'><b>verifyEditFooterText</b><br>Test class: testscript.ManageFooterTextTest<br>Test method: Verify that the footer text can be edited successfully</td>
+<td></td>
+<td>1</td>
+<td>testscript.ManageFooterTextTest@45b4c3a9</td></tr>
 <tr>
 <td title='testscript.LoginTest.verifyInvalidUsernameAndValidPassword()'><b>verifyInvalidUsernameAndValidPassword</b><br>Test class: testscript.LoginTest<br>Test method: Check whether the system prevents login with invalid username and valid password</td>
 <td></td>
 <td>0</td>
-<td>testscript.LoginTest@7d8704ef</td></tr>
-<tr>
-<td title='testscript.ManageNewsTest.verifyNewNewsCreation()'><b>verifyNewNewsCreation</b><br>Test class: testscript.ManageNewsTest<br>Test method: “Verify that a new news item can be created successfully</td>
-<td></td>
-<td>2</td>
-<td>testscript.ManageNewsTest@bccb269</td></tr>
+<td>testscript.LoginTest@33c911a1</td></tr>
 </table><p>
 </body>
 </html>

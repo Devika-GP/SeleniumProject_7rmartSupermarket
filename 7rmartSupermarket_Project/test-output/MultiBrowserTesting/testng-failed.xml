@@ -4,20 +4,20 @@
   <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="testscript.ManageCategoryTest">
-        <methods>
-          <include name="verifyNewCategoryCreation"/>
-          <include name="browserQuitandClose"/>
-          <include name="browserInitialization"/>
-        </methods>
-      </class> <!-- testscript.ManageCategoryTest -->
       <class name="testscript.AdminUsersTest">
         <methods>
           <include name="verifyNewAdminUserCreation"/>
-          <include name="browserQuitandClose"/>
           <include name="browserInitialization"/>
+          <include name="browserQuit"/>
         </methods>
       </class> <!-- testscript.AdminUsersTest -->
+      <class name="testscript.ManageCategoryTest">
+        <methods>
+          <include name="verifyNewCategoryCreation"/>
+          <include name="browserInitialization"/>
+          <include name="browserQuit"/>
+        </methods>
+      </class> <!-- testscript.ManageCategoryTest -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [MultiBrowserTesting] -->

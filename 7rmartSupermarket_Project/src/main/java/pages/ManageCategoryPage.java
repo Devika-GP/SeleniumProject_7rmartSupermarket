@@ -42,12 +42,12 @@ public class ManageCategoryPage {
 	}
 	
 	public void createNewCategory(String category) {
-		newbutton.click();		
+		newbutton.click();
 		categoryname.sendKeys(category);
 		pageutility.clickUsingJavaScript(driver, selectgroup);
 		fileuploadutility.fileUploadUsingSendkeys(fileselect, Constant.CATEGORYIMAGEFILE);
 		waitutility.waitForElementToBeClickable(driver, savebutton);
-		pageutility.clickmethod(driver, savebutton);
+		pageutility.clickUsingJavaScript(driver, savebutton);
 	}
 	
 	public boolean isCategorySavedAlertDisplayed() {

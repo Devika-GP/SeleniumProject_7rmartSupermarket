@@ -42,7 +42,7 @@ public class PageUtility {
 	//hidden elements can be clicked using Actions class
 	public void clickmethod(WebDriver driver, WebElement element) {
 		Actions action = new Actions(driver);
-		action.click(element).perform();
+		action.click().perform();
 	}
 	
 	public void doubleClick(WebDriver driver, WebElement element) {
