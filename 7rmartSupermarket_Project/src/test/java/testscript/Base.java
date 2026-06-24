@@ -23,7 +23,7 @@ public class Base {
 	public FileInputStream fileinputstream;
 	
 	@Parameters("browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void browserInitialization(String browser) throws Exception {
 		try {
 			properties = new Properties();
@@ -55,7 +55,7 @@ public class Base {
 	 * @AfterMethod public void browserQuitandClose() { driver.quit(); }
 	 */
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void browserQuitandClose(ITestResult iTestResult) throws IOException {
 	    if (iTestResult.getStatus() == ITestResult.FAILURE) {
 	        ScreenshotUtility screenShot = new ScreenshotUtility(); // creating obj

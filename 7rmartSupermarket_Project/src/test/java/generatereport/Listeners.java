@@ -49,15 +49,13 @@ public class Listeners implements ITestListener {
 			e.printStackTrace();
 		}
 
-		// Second attempt with generic catch 
+		// Second attempt with generic catch
 		try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
 					.get(result.getInstance());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
-		// Optional: screenshot capture logic can be added here using driver
 	}
 
 	public void onTestSkipped(ITestResult result) {
@@ -75,14 +73,14 @@ public class Listeners implements ITestListener {
 		ITestListener.super.onTestFailedWithTimeout(result);
 		// Timeout-specific handling can be added here
 	}
-	
-	public void onStart(ITestContext context) {
-        ITestListener.super.onStart(context);
-    }
 
-    public void onFinish(ITestContext context) {
-        ITestListener.super.onFinish(context);
-        extent.flush(); // flush() ensures report is written out
-    }
+	public void onStart(ITestContext context) {
+		ITestListener.super.onStart(context);
+	}
+
+	public void onFinish(ITestContext context) {
+		ITestListener.super.onFinish(context);
+		extent.flush(); // flush() ensures report is written out
+	}
 
 }
