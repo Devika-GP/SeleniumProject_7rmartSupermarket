@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageCategoryPage;
 import utilities.ExcelUtility;
@@ -30,6 +31,6 @@ public class ManageCategoryTest extends Base {
 		category.createNewCategory(categoryname);
 
 		boolean alertmessage = category.isCategorySavedAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage, Constant.MANAGECATEGORYERROR);
 	}
 }

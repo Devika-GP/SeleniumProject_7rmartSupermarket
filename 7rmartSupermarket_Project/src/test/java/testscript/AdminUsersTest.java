@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.AdminUsersPage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
@@ -33,6 +34,6 @@ public class AdminUsersTest extends Base {
 		adminpage.createNewUser(adminusername, adminpassword, usertype);
 
 		boolean alertmessage = adminpage.isUserSavedAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage, Constant.ADMINUSERPAGEERROR);
 	}
 }

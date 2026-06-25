@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
@@ -20,7 +21,7 @@ public class LoginTest extends Base {
 		loginpage.verifyLogin(username, password);
 
 		boolean dashboard = loginpage.isDashboardDisplayed();
-		Assert.assertTrue(dashboard);
+		Assert.assertTrue(dashboard, Constant.VALIDLOGINERROR);
 	}
 
 	@Test(description = "Check whether the system prevents login with valid username and invalid password")
@@ -33,7 +34,7 @@ public class LoginTest extends Base {
 		loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alert);
+		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);
 	}
 
 	@Test(description = "Check whether the system prevents login with invalid username and valid password")
@@ -46,7 +47,7 @@ public class LoginTest extends Base {
 		loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alert);
+		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);
 	}
 
 	@Test(description = "Check whether the system prevents login with invalid username and invalid password")
@@ -59,6 +60,6 @@ public class LoginTest extends Base {
 		loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
-		Assert.assertTrue(alert);
+		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);
 	}
 }

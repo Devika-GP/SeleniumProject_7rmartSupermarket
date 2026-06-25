@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import pages.ManageFooterTextPage;
 import utilities.ExcelUtility;
@@ -28,6 +29,6 @@ public class ManageFooterTextTest extends Base {
 		footertext.editFooterText_edit2(address, email, phone);
 
 		boolean alertmessage = footertext.isUpdateAlertDisplayed();
-		Assert.assertTrue(alertmessage);
+		Assert.assertTrue(alertmessage, Constant.MANAGEFOOTERTEXTERROR);
 	}
 }
