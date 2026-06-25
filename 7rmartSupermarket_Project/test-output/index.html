@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Grouping" class="navigator-link">
-              <span class="suite-name border-passed">Grouping</span>
+            <a href="#" panel-name="suite-TestNGSuite" class="navigator-link">
+              <span class="suite-name border-failed">TestNGSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Grouping" class="navigator-link ">
-                    <span>C:\Users\DEVIKA\git\SeleniumProject_7rmartSupermarket\7rmartSupermarket_Project\grouping.xml</span>
+                  <a href="#" panel-name="test-xml-TestNGSuite" class="navigator-link ">
+                    <span>C:\Users\DEVIKA\git\SeleniumProject_7rmartSupermarket\7rmartSupermarket_Project\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="testlist-TestNGSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Grouping" class="navigator-link ">
-                    <span>1 group</span>
+                  <a href="#" panel-name="group-TestNGSuite" class="navigator-link ">
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="times-TestNGSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="reporter-TestNGSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-TestNGSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="chronological-TestNGSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Grouping" class="hide-methods passed suite-Grouping"> (hide)</a> <!-- hide-methods passed suite-Grouping -->
-                      <a href="#" panel-name="suite-Grouping" class="show-methods passed suite-Grouping"> (show)</a> <!-- show-methods passed suite-Grouping -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNGSuite" class="hide-methods failed suite-TestNGSuite"> (hide)</a> <!-- hide-methods failed suite-TestNGSuite -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="show-methods failed suite-TestNGSuite"> (show)</a> <!-- show-methods failed suite-TestNGSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Grouping">
+                    <div class="method-list-content failed suite-TestNGSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testscript.LogoutTest" class="method navigator-link" hash-for-method="verifySuccessfulLogout">verifySuccessfulLogout</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyNewAdminUserCreation">verifyNewAdminUserCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNGSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNGSuite" class="hide-methods skipped suite-TestNGSuite"> (hide)</a> <!-- hide-methods skipped suite-TestNGSuite -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="show-methods skipped suite-TestNGSuite"> (show)</a> <!-- show-methods skipped suite-TestNGSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNGSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyNewAdminUserCreation">verifyNewAdminUserCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyValidUsernameAndValidPassword">verifyValidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyNewAdminUserCreation">verifyNewAdminUserCreation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Grouping -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifyNewAdminUserCreation">verifyNewAdminUserCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNGSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,232 +141,316 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Grouping" class="panel Grouping">
-          <div class="suite-Grouping-class-passed">
+        <div panel-name="suite-TestNGSuite" class="panel TestNGSuite">
+          <div class="suite-TestNGSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.LogoutTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">testscript.AdminUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySuccessfulLogout">
-                  </a> <!-- verifySuccessfulLogout -->
-                  <span class="method-name">verifySuccessfulLogout</span>
+                  <a name="verifyNewAdminUserCreation">
+                  </a> <!-- verifyNewAdminUserCreation -->
+                  <span class="method-name">verifyNewAdminUserCreation</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
+  (Session info: chrome=149.0.7827.155): xss
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6eeeaf9bfab78d478157a232f0f1f29e, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, goog:processID: 43128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64402/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6eeeaf9bfab78d478157a232f0f1f29e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
+	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify that a logged-in user can log out successfully)                  </em>
+(Verify that a new user can be created successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Grouping-class-passed -->
-          <div class="suite-Grouping-class-passed">
+          </div> <!-- suite-TestNGSuite-class-failed -->
+          <div class="suite-TestNGSuite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.LoginTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.AdminUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyValidUsernameAndValidPassword">
-                  </a> <!-- verifyValidUsernameAndValidPassword -->
-                  <span class="method-name">verifyValidUsernameAndValidPassword</span>
+                  <a name="verifyNewAdminUserCreation">
+                  </a> <!-- verifyNewAdminUserCreation -->
+                  <span class="method-name">verifyNewAdminUserCreation</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
+  (Session info: chrome=149.0.7827.155): xss
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4f2fc523b5d187234c2c82e465ae07e4, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53379}, goog:processID: 41952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53379/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f2fc523b5d187234c2c82e465ae07e4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
+	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify that a user can successfully log in with a valid username and valid password)                  </em>
+(Verify that a new user can be created successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewAdminUserCreation">
+                  </a> <!-- verifyNewAdminUserCreation -->
+                  <span class="method-name">verifyNewAdminUserCreation</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
+  (Session info: chrome=149.0.7827.155): xss
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6984828e06e5bb36fe0cd918cdd58fc1, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60155}, goog:processID: 3156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60155/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6984828e06e5bb36fe0cd918cdd58fc1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
+	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that a new user can be created successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewAdminUserCreation">
+                  </a> <!-- verifyNewAdminUserCreation -->
+                  <span class="method-name">verifyNewAdminUserCreation</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
+  (Session info: chrome=149.0.7827.155): xss
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0bd23b3f2ec3412711b4f104226924aa, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52389}, goog:processID: 40040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52389/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0bd23b3f2ec3412711b4f104226924aa
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
+	at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that a new user can be created successfully)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Grouping-class-passed -->
-        </div> <!-- panel Grouping -->
-        <div panel-name="test-xml-Grouping" class="panel">
+          </div> <!-- suite-TestNGSuite-class-skipped -->
+        </div> <!-- panel TestNGSuite -->
+        <div panel-name="test-xml-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DEVIKA\git\SeleniumProject_7rmartSupermarket\7rmartSupermarket_Project\grouping.xml</span>
+            <span class="header-content">C:\Users\DEVIKA\git\SeleniumProject_7rmartSupermarket\7rmartSupermarket_Project\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Grouping&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+&lt;suite name=&quot;TestNGSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;Regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
-      &lt;class name=&quot;testscript.ManageCategoryTest&quot;/&gt;
       &lt;class name=&quot;testscript.AdminUsersTest&quot;/&gt;
-      &lt;class name=&quot;testscript.ManageContactTest&quot;/&gt;
-      &lt;class name=&quot;testscript.ManageNewsTest&quot;/&gt;
-      &lt;class name=&quot;testscript.ManageFooterTextTest&quot;/&gt;
-      &lt;class name=&quot;testscript.LogoutTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- EdgeTest --&gt;
-&lt;/suite&gt; &lt;!-- Grouping --&gt;
+&lt;/suite&gt; &lt;!-- TestNGSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Grouping" class="panel">
+        <div panel-name="testlist-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Grouping</span>
+            <span class="header-content">Tests for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">EdgeTest (7 classes)</span>
+                <span class="test-name">EdgeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Grouping" class="panel">
+        <div panel-name="group-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Grouping</span>
+            <span class="header-content">Groups for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifySuccessfulLogout</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">verifyValidUsernameAndValidPassword</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Grouping" class="panel">
+        <div panel-name="times-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Grouping</span>
+            <span class="header-content">Times for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Grouping');
-function tableData_Grouping() {
+suiteTableInitFunctions.push('tableData_TestNGSuite');
+function tableData_TestNGSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyValidUsernameAndValidPassword')
-data.setCell(0, 2, 'testscript.LoginTest')
-data.setCell(0, 3, 1194);
+data.setCell(0, 1, 'verifyNewAdminUserCreation')
+data.setCell(0, 2, 'testscript.AdminUsersTest')
+data.setCell(0, 3, 3070);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySuccessfulLogout')
-data.setCell(1, 2, 'testscript.LogoutTest')
-data.setCell(1, 3, 813);
-window.suiteTableData['Grouping']= { tableData: data, tableDiv: 'times-div-Grouping'}
+data.setCell(1, 1, 'verifyNewAdminUserCreation')
+data.setCell(1, 2, 'testscript.AdminUsersTest')
+data.setCell(1, 3, 1537);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyNewAdminUserCreation')
+data.setCell(2, 2, 'testscript.AdminUsersTest')
+data.setCell(2, 3, 1405);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyNewAdminUserCreation')
+data.setCell(3, 2, 'testscript.AdminUsersTest')
+data.setCell(3, 3, 1317);
+window.suiteTableData['TestNGSuite']= { tableData: data, tableDiv: 'times-div-TestNGSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Grouping">
-              </div> <!-- times-div-Grouping -->
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-TestNGSuite">
+              </div> <!-- times-div-TestNGSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Grouping" class="panel">
+        <div panel-name="reporter-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Grouping</span>
+            <span class="header-content">Reporter output for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Grouping" class="panel">
+        <div panel-name="ignored-methods-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.AdminUsersTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNewAdminUserCreation</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageFooterTextTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyEditFooterText</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyValidUsernameAndInvalidPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidUsernameAndValidPassword</span>
-                <br/>
-                <span class="ignored-method-name">verifyInvalidUsernameAndInvalidPassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageNewsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNewNewsCreation</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageContactTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyEditContact</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageCategoryTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyNewCategoryCreation</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Grouping" class="panel">
+        <div panel-name="chronological-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscript.AdminUsersTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-name">browserInitialization(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyValidUsernameAndValidPassword</span>
-                <span class="method-start">2371 ms</span>
+                <span class="method-name">verifyNewAdminUserCreation</span>
+                <span class="method-start">15950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuitandClose([TestResult name=verifyValidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifyValidUser...)</span>
-                <span class="method-start">3573 ms</span>
+                <span class="method-name">browserQuitandClose([TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCrea...)</span>
+                <span class="method-start">19042 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testscript.LogoutTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">browserInitialization(Edge)</span>
-                <span class="method-start">3748 ms</span>
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">19327 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifySuccessfulLogout</span>
-                <span class="method-start">5140 ms</span>
+                <span class="method-name">verifyNewAdminUserCreation</span>
+                <span class="method-start">21561 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuitandClose([TestResult name=verifySuccessfulLogout status=SUCCESS method=LogoutTest.verifySuccessfulLogout()[pr...)</span>
-                <span class="method-start">5958 ms</span>
+                <span class="method-name">browserQuitandClose([TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCrea...)</span>
+                <span class="method-start">23103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">23358 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewAdminUserCreation</span>
+                <span class="method-start">25295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuitandClose([TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCrea...)</span>
+                <span class="method-start">26708 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Chrome)</span>
+                <span class="method-start">26942 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyNewAdminUserCreation</span>
+                <span class="method-start">28874 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuitandClose([TestResult name=verifyNewAdminUserCreation status=FAILURE method=AdminUsersTest.verifyNewAdminUserC...)</span>
+                <span class="method-start">30208 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
