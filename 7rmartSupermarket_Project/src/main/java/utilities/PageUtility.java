@@ -51,17 +51,12 @@ public class PageUtility {
 	}
 
 	//simple alert, confirmation alert, prompt alert
-	public void simpleAlertHandling(WebDriver driver, String text) {
+	public void simpleAlertHandling(WebDriver driver) {
 		//switching to alert box using Alert interface
 		Alert simplealert = driver.switchTo().alert();
 		String actualtext = simplealert.getText();
-		if(actualtext.equals(text)) {
 			System.out.println("Alert message is: "+actualtext);
 			simplealert.accept();
-		}
-		else {
-			System.out.println("Text mismatch. Validation failed!");
-		}
 	}
 	
 	public void confirmAlertHandling(WebDriver driver) {
