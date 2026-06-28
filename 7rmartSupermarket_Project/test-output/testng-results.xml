@@ -1,366 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-25T18:09:40 IST" name="TestNGSuite" finished-at="2026-06-25T18:10:11 IST" duration-ms="30841">
+  <suite started-at="2026-06-26T15:45:41 IST" name="TestNGSuite" finished-at="2026-06-26T15:46:37 IST" duration-ms="55782">
     <groups>
+      <group name="Regression">
+        <method signature="LoginTest.verifyValidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@7098b907]" name="verifyValidUsernameAndValidPassword" class="testscript.LoginTest"/>
+        <method signature="LogoutTest.verifySuccessfulLogout()[pri:0, instance:testscript.LogoutTest@78fa769e]" name="verifySuccessfulLogout" class="testscript.LogoutTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-06-25T18:09:40 IST" name="EdgeTest" finished-at="2026-06-25T18:10:11 IST" duration-ms="30841">
+    <test started-at="2026-06-26T15:45:41 IST" name="EdgeTest" finished-at="2026-06-26T15:46:37 IST" duration-ms="55782">
+      <class name="testscript.ManageNewsTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ManageNewsTest@7fd7a283]" started-at="2026-06-26T15:46:20 IST" name="browserInitialization" finished-at="2026-06-26T15:46:27 IST" duration-ms="6490" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyNewNewsCreation()[pri:0, instance:testscript.ManageNewsTest@7fd7a283]" started-at="2026-06-26T15:46:27 IST" name="verifyNewNewsCreation" description="“Verify that a new news item can be created successfully" finished-at="2026-06-26T15:46:30 IST" duration-ms="3251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewNewsCreation -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@7fd7a283]" started-at="2026-06-26T15:46:30 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:30 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewNewsCreation status=SUCCESS method=ManageNewsTest.verifyNewNewsCreation()[pri:0, instance:testscript.ManageNewsTest@7fd7a283] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.ManageContactTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ManageContactTest@7ac296f6]" started-at="2026-06-26T15:46:13 IST" name="browserInitialization" finished-at="2026-06-26T15:46:16 IST" duration-ms="2995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyEditContact()[pri:0, instance:testscript.ManageContactTest@7ac296f6]" started-at="2026-06-26T15:46:16 IST" name="verifyEditContact" description="Verify that contact information can be edited successfully" finished-at="2026-06-26T15:46:20 IST" duration-ms="3499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditContact -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.ManageContactTest@7ac296f6]" started-at="2026-06-26T15:46:20 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:20 IST" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditContact status=SUCCESS method=ManageContactTest.verifyEditContact()[pri:0, instance:testscript.ManageContactTest@7ac296f6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.ManageContactTest -->
+      <class name="testscript.ManageFooterTextTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ManageFooterTextTest@22f59fa]" started-at="2026-06-26T15:46:30 IST" name="browserInitialization" finished-at="2026-06-26T15:46:31 IST" duration-ms="1481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyEditFooterText()[pri:0, instance:testscript.ManageFooterTextTest@22f59fa]" started-at="2026-06-26T15:46:31 IST" name="verifyEditFooterText" description="Verify that the footer text can be edited successfully" finished-at="2026-06-26T15:46:33 IST" duration-ms="1865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditFooterText -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.ManageFooterTextTest@22f59fa]" started-at="2026-06-26T15:46:33 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:34 IST" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyEditFooterText status=SUCCESS method=ManageFooterTextTest.verifyEditFooterText()[pri:0, instance:testscript.ManageFooterTextTest@22f59fa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.ManageFooterTextTest -->
       <class name="testscript.AdminUsersTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:09:40 IST" name="browserInitialization" finished-at="2026-06-25T18:09:56 IST" duration-ms="15948" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@2eea88a1]" started-at="2026-06-26T15:46:08 IST" name="browserInitialization" finished-at="2026-06-26T15:46:10 IST" duration-ms="2037" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:09:56 IST" name="verifyNewAdminUserCreation" description="Verify that a new user can be created successfully" finished-at="2026-06-25T18:09:59 IST" duration-ms="3070" status="SKIP">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0bd23b3f2ec3412711b4f104226924aa, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52389}, goog:processID: 40040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52389/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bd23b3f2ec3412711b4f104226924aa]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0bd23b3f2ec3412711b4f104226924aa, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52389}, goog:processID: 40040, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52389/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0bd23b3f2ec3412711b4f104226924aa
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
-at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2eea88a1]" started-at="2026-06-26T15:46:10 IST" name="verifyNewAdminUserCreation" description="Verify that a new user can be created successfully" finished-at="2026-06-26T15:46:13 IST" duration-ms="2887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewAdminUserCreation -->
-        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:09:59 IST" name="browserQuitandClose" finished-at="2026-06-25T18:09:59 IST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@2eea88a1]" started-at="2026-06-26T15:46:13 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:13 IST" duration-ms="174" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitandClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:09:59 IST" name="browserInitialization" finished-at="2026-06-25T18:10:02 IST" duration-ms="2234" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:02 IST" name="verifyNewAdminUserCreation" description="Verify that a new user can be created successfully" finished-at="2026-06-25T18:10:03 IST" duration-ms="1537" status="SKIP">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6984828e06e5bb36fe0cd918cdd58fc1, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60155}, goog:processID: 3156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60155/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6984828e06e5bb36fe0cd918cdd58fc1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6984828e06e5bb36fe0cd918cdd58fc1, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60155}, goog:processID: 3156, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60155/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6984828e06e5bb36fe0cd918cdd58fc1
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
-at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAdminUserCreation -->
-        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:03 IST" name="browserQuitandClose" finished-at="2026-06-25T18:10:03 IST" duration-ms="253" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitandClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:03 IST" name="browserInitialization" finished-at="2026-06-25T18:10:05 IST" duration-ms="1937" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method retried="true" signature="verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:05 IST" name="verifyNewAdminUserCreation" description="Verify that a new user can be created successfully" finished-at="2026-06-25T18:10:07 IST" duration-ms="1405" status="SKIP">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4f2fc523b5d187234c2c82e465ae07e4, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53379}, goog:processID: 41952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53379/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4f2fc523b5d187234c2c82e465ae07e4]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4f2fc523b5d187234c2c82e465ae07e4, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53379}, goog:processID: 41952, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53379/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4f2fc523b5d187234c2c82e465ae07e4
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
-at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAdminUserCreation -->
-        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:07 IST" name="browserQuitandClose" finished-at="2026-06-25T18:10:07 IST" duration-ms="233" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewAdminUserCreation status=SKIP method=AdminUsersTest.verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuitandClose -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:07 IST" name="browserInitialization" finished-at="2026-06-25T18:10:09 IST" duration-ms="1932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:09 IST" name="verifyNewAdminUserCreation" description="Verify that a new user can be created successfully" finished-at="2026-06-25T18:10:10 IST" duration-ms="1317" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6eeeaf9bfab78d478157a232f0f1f29e, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, goog:processID: 43128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64402/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6eeeaf9bfab78d478157a232f0f1f29e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : xss}
-  (Session info: chrome=149.0.7827.155): xss
-Build info: version: '4.39.0', revision: '126f156aee'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6eeeaf9bfab78d478157a232f0f1f29e, findElement {value=a.btn.btn-rounded.btn-danger, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.155, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\DEVIKA\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64402}, goog:processID: 43128, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64402/devtoo..., se:cdpVersion: 149.0.7827.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6eeeaf9bfab78d478157a232f0f1f29e
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:140)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pages.AdminUsersPage.createNewUser(AdminUsersPage.java:39)
-at testscript.AdminUsersTest.verifyNewAdminUserCreation(AdminUsersTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNewAdminUserCreation -->
-        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.AdminUsersTest@2fb0623e]" started-at="2026-06-25T18:10:10 IST" name="browserQuitandClose" finished-at="2026-06-25T18:10:11 IST" duration-ms="590" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyNewAdminUserCreation status=FAILURE method=AdminUsersTest.verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2fb0623e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewAdminUserCreation status=SUCCESS method=AdminUsersTest.verifyNewAdminUserCreation()[pri:0, instance:testscript.AdminUsersTest@2eea88a1] output={null}]]]>
               </value>
             </param>
           </params>
@@ -368,6 +122,168 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- browserQuitandClose -->
       </class> <!-- testscript.AdminUsersTest -->
+      <class name="testscript.LogoutTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@78fa769e]" started-at="2026-06-26T15:46:34 IST" name="browserInitialization" finished-at="2026-06-26T15:46:35 IST" duration-ms="1981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifySuccessfulLogout()[pri:0, instance:testscript.LogoutTest@78fa769e]" started-at="2026-06-26T15:46:35 IST" name="verifySuccessfulLogout" description="Verify that a logged-in user can log out successfully" finished-at="2026-06-26T15:46:37 IST" duration-ms="1074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogout -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@78fa769e]" started-at="2026-06-26T15:46:37 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:37 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessfulLogout status=SUCCESS method=LogoutTest.verifySuccessfulLogout()[pri:0, instance:testscript.LogoutTest@78fa769e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.LogoutTest -->
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:41 IST" name="browserInitialization" finished-at="2026-06-26T15:45:43 IST" duration-ms="2429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyInvalidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:43 IST" name="verifyInvalidUsernameAndInvalidPassword" description="Check whether the system prevents login with invalid username and invalid password" finished-at="2026-06-26T15:45:44 IST" duration-ms="974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:44 IST" name="browserQuitandClose" finished-at="2026-06-26T15:45:45 IST" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifyInvalidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:45 IST" name="browserInitialization" finished-at="2026-06-26T15:45:47 IST" duration-ms="2361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:47 IST" name="verifyInvalidUsernameAndValidPassword" description="Check whether the system prevents login with invalid username and valid password" finished-at="2026-06-26T15:45:47 IST" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:47 IST" name="browserQuitandClose" finished-at="2026-06-26T15:45:47 IST" duration-ms="155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyInvalidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifyInvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:47 IST" name="browserInitialization" finished-at="2026-06-26T15:45:50 IST" duration-ms="2513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:50 IST" name="verifyValidUsernameAndInvalidPassword" description="Check whether the system prevents login with valid username and invalid password" finished-at="2026-06-26T15:45:50 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:50 IST" name="browserQuitandClose" finished-at="2026-06-26T15:45:51 IST" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidUsernameAndInvalidPassword status=SUCCESS method=LoginTest.verifyValidUsernameAndInvalidPassword()[pri:0, instance:testscript.LoginTest@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:51 IST" name="browserInitialization" finished-at="2026-06-26T15:45:53 IST" duration-ms="2053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyValidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:53 IST" name="verifyValidUsernameAndValidPassword" description="Verify that a user can successfully log in with a valid username and valid password" finished-at="2026-06-26T15:45:54 IST" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidUsernameAndValidPassword -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7098b907]" started-at="2026-06-26T15:45:54 IST" name="browserQuitandClose" finished-at="2026-06-26T15:45:54 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidUsernameAndValidPassword status=SUCCESS method=LoginTest.verifyValidUsernameAndValidPassword()[pri:0, instance:testscript.LoginTest@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.LoginTest -->
+      <class name="testscript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.ManageCategoryTest@a8ef162]" started-at="2026-06-26T15:45:54 IST" name="browserInitialization" finished-at="2026-06-26T15:45:56 IST" duration-ms="2148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyNewCategoryCreation()[pri:0, instance:testscript.ManageCategoryTest@a8ef162]" started-at="2026-06-26T15:45:56 IST" name="verifyNewCategoryCreation" description="Verify that a new category/product can be added successfully with its image" finished-at="2026-06-26T15:46:08 IST" duration-ms="12279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCreation -->
+        <test-method is-config="true" signature="browserQuitandClose(org.testng.ITestResult)[pri:0, instance:testscript.ManageCategoryTest@a8ef162]" started-at="2026-06-26T15:46:08 IST" name="browserQuitandClose" finished-at="2026-06-26T15:46:08 IST" duration-ms="242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCreation status=SUCCESS method=ManageCategoryTest.verifyNewCategoryCreation()[pri:0, instance:testscript.ManageCategoryTest@a8ef162] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuitandClose -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </test> <!-- EdgeTest -->
   </suite> <!-- TestNGSuite -->
 </testng-results>
