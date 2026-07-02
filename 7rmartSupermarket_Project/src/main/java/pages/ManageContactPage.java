@@ -9,8 +9,11 @@ import utilities.PageUtility;
 
 public class ManageContactPage {
 
-	@FindBy(xpath = "//a[contains(@href,'list-contact') and @class='small-box-footer']")
-	WebElement moreinfo;
+	/*
+	 * @FindBy(xpath =
+	 * "//a[contains(@href,'list-contact') and @class='small-box-footer']")
+	 * WebElement moreinfo;
+	 */
 	@FindBy(css = "a.btn.btn-sm.btn.btn-primary.btncss")
 	WebElement editbutton;
 	@FindBy(css = "input#phone")
@@ -36,9 +39,9 @@ public class ManageContactPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void navigateToManageContactPage() {
-		moreinfo.click();
-	}
+	/*
+	 * public void navigateToManageContactPage() { moreinfo.click(); }
+	 */
 
 	public void editContact(int phone, String email, String address, int deliverytime, int deliverychargelimit) {
 		editbutton.click();

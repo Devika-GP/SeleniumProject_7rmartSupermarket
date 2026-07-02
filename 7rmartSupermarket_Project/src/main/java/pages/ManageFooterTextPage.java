@@ -9,8 +9,11 @@ import utilities.PageUtility;
 
 public class ManageFooterTextPage {
 
-	@FindBy(xpath = "//a[contains(@href,'list-footertext') and @class='small-box-footer']")
-	WebElement moreinfo;
+	/*
+	 * @FindBy(xpath =
+	 * "//a[contains(@href,'list-footertext') and @class='small-box-footer']")
+	 * WebElement moreinfo;
+	 */
 	@FindBy(xpath = "//a[contains(@href,'edit=2')]")
 	WebElement edit_2;
 	@FindBy(css = "textarea#content")
@@ -32,9 +35,9 @@ public class ManageFooterTextPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void navigateToManageFooterTextPage() {
-		moreinfo.click();
-	}
+	/*
+	 * public void navigateToManageFooterTextPage() { moreinfo.click(); }
+	 */
 
 	public void editFooterText_edit2(String address, String email, int phone) {
 		edit_2.click();

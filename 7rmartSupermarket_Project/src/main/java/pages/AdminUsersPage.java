@@ -8,8 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.PageUtility;
 
 public class AdminUsersPage {
-	@FindBy(xpath = "//a[contains(@href,'list-admin') and @class='small-box-footer']")
-	WebElement moreinfo;
+	/*
+	 * @FindBy(xpath =
+	 * "//a[contains(@href,'list-admin') and @class='small-box-footer']") WebElement
+	 * moreinfo;
+	 */
 	@FindBy(css = "a.btn.btn-rounded.btn-danger")
 	WebElement newbutton;
 	@FindBy(css = "input#username")
@@ -31,17 +34,41 @@ public class AdminUsersPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void navigateToAdminUsers() {
-		moreinfo.click();
-	}
+	/*
+	 * public void navigateToAdminUsers() { moreinfo.click(); }
+	 */
 
-	public void createNewUser(String username, String password, String usertype) {
+	public AdminUsersPage clickNewButton() {
 		newbutton.click();
-		this.username.sendKeys(username);
-		this.password.sendKeys(password);
-		pageutility.dropDownValue(this.usertype, usertype);
-		savebutton.click();
+		return this;
 	}
+	
+	public AdminUsersPage enterUsername(String username) {
+		this.password.sendKeys(username);
+		return this;
+	}
+	
+	public AdminUsersPage enterPassword(String password) {
+		this.password.sendKeys(password);
+		return this;
+	}
+	
+	public AdminUsersPage selectUserType(String usertype) {
+		pageutility.dropDownValue(this.usertype, usertype);
+		return this;
+	}
+	
+	public AdminUsersPage saveNewUser() {
+		savebutton.click();
+		return this;
+	}
+	
+	/*
+	 * public void createNewUser(String username, String password, String usertype)
+	 * { newbutton.click(); this.username.sendKeys(username);
+	 * this.password.sendKeys(password); pageutility.dropDownValue(this.usertype,
+	 * usertype); savebutton.click(); }
+	 */
 
 	public boolean isUserSavedAlertDisplayed() {
 		return alert.isDisplayed();

@@ -6,11 +6,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constant;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 
+	HomePage homepage;
 	@Test(description = "Verify that a user can successfully log in with a valid username and valid password", groups={"Regression"})
 	public void verifyValidUsernameAndValidPassword() throws IOException {
 
@@ -18,7 +20,7 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.getStringData(1, 1, "loginpage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.verifyLogin(username, password);
+		homepage = loginpage.verifyLogin(username, password);
 
 		boolean dashboard = loginpage.isDashboardDisplayed();
 		Assert.assertTrue(dashboard, Constant.VALIDLOGINERROR);
@@ -31,7 +33,7 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.getStringData(2, 1, "loginpage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.verifyLogin(username, password);
+		homepage = loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);
@@ -44,7 +46,7 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.getStringData(3, 1, "loginpage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.verifyLogin(username, password);
+		homepage = loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);
@@ -57,7 +59,7 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.getStringData(4, 1, "loginpage");
 
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.verifyLogin(username, password);
+		homepage = loginpage.verifyLogin(username, password);
 
 		boolean alert = loginpage.isAlertDisplayed();
 		Assert.assertTrue(alert, Constant.INVALIDLOGINERROR);

@@ -11,8 +11,11 @@ import utilities.PageUtility;
 import utilities.WaitUtility;
 
 public class ManageCategoryPage {
-	@FindBy(xpath = "//a[contains(@href,'list-category') and @class='small-box-footer']")
-	WebElement moreinfo;
+	/*
+	 * @FindBy(xpath =
+	 * "//a[contains(@href,'list-category') and @class='small-box-footer']")
+	 * WebElement moreinfo;
+	 */
 	@FindBy(css = "a.btn.btn-rounded.btn-danger")
 	WebElement newbutton;
 	@FindBy(xpath = "//input[@name='category']")
@@ -37,18 +40,43 @@ public class ManageCategoryPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void navigateToManageCategoryPage() {
-		moreinfo.click();
+	/*
+	 * public void navigateToManageCategoryPage() { moreinfo.click(); }
+	 */
+	
+	public ManageCategoryPage clickNewButton() {
+		newbutton.click();
+		return this;
 	}
 	
-	public void createNewCategory(String category) {
-		newbutton.click();
+	public ManageCategoryPage enterCategoryName(String category) {
 		categoryname.sendKeys(category);
+		return this;
+	}
+	
+	public ManageCategoryPage selectGroup(WebDriver driver) {
 		pageutility.clickUsingJavaScript(driver, selectgroup);
+		return this;
+	}
+	
+	public ManageCategoryPage uploadImageFile() {
 		fileuploadutility.fileUploadUsingSendkeys(fileselect, Constant.CATEGORYIMAGEFILE);
+		return this;
+	}
+	
+	public ManageCategoryPage clickSaveButton(WebDriver driver) {
 		waitutility.waitForElementToBeClickable(driver, savebutton);
 		pageutility.clickUsingJavaScript(driver, savebutton);
+		return this;
 	}
+	
+	/*
+	 * public void createNewCategory(String category) { newbutton.click();
+	 * categoryname.sendKeys(category); pageutility.clickUsingJavaScript(driver,
+	 * selectgroup); fileuploadutility.fileUploadUsingSendkeys(fileselect,
+	 * Constant.CATEGORYIMAGEFILE); waitutility.waitForElementToBeClickable(driver,
+	 * savebutton); pageutility.clickUsingJavaScript(driver, savebutton); }
+	 */
 	
 	public boolean isCategorySavedAlertDisplayed() {
 		return alert.isDisplayed();

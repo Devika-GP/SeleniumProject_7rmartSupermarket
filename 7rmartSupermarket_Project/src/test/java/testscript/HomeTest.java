@@ -7,10 +7,10 @@ import org.testng.annotations.Test;
 
 import constant.Constant;
 import pages.LoginPage;
-import pages.LogoutPage;
+import pages.HomePage;
 import utilities.ExcelUtility;
 
-public class LogoutTest extends Base {
+public class HomeTest extends Base {
 
 	@Test(description="Verify that a logged-in user can log out successfully", groups={"Regression"})
 	public void verifySuccessfulLogout() throws IOException {
@@ -21,7 +21,7 @@ public class LogoutTest extends Base {
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.verifyLogin(username, password);
 
-		LogoutPage logoutpage = new LogoutPage(driver);
+		HomePage logoutpage = new HomePage(driver);
 		logoutpage.clickDropDownMenu(driver);
 		logoutpage.clickLogoutButton();
 

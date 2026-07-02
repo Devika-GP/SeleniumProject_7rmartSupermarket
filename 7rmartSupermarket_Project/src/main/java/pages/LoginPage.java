@@ -28,10 +28,11 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void verifyLogin(String username, String password) {
+	public HomePage verifyLogin(String username, String password) {
 		usernamefield.sendKeys(username);
 		passwordfield.sendKeys(password);
 		loginbutton.click();
+		return new HomePage(driver);
 	}
 
 	public boolean isDashboardDisplayed() {
