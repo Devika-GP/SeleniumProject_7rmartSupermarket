@@ -14,7 +14,7 @@ public class ManageFooterTextPage {
 	 * "//a[contains(@href,'list-footertext') and @class='small-box-footer']")
 	 * WebElement moreinfo;
 	 */
-	@FindBy(xpath = "//a[contains(@href,'edit=2')]")
+	@FindBy(xpath = "//a[contains(@href,'edit=2')]") //2nd row is selected for editing
 	WebElement edit_2;
 	@FindBy(css = "textarea#content")
 	WebElement address;
@@ -38,14 +38,22 @@ public class ManageFooterTextPage {
 	/*
 	 * public void navigateToManageFooterTextPage() { moreinfo.click(); }
 	 */
-
-	public void editFooterText_edit2(String address, String email, int phone) {
+	
+	public ManageFooterTextPage clickEditFooterText() {
 		edit_2.click();
-
+		return this;
+	}
+	
+	public ManageFooterTextPage clearFooterTextFields() {
+	
 		// clearing all fields first
 		this.address.clear();
 		this.email.clear();
-		this.phone.clear();
+		this.phone.clear();	
+		return this;
+	}
+
+	public ManageFooterTextPage enterNewFooterText(String address, String email, int phone) {
 
 		// updating with new info
 		this.address.sendKeys(address);
@@ -53,6 +61,7 @@ public class ManageFooterTextPage {
 		this.phone.sendKeys(String.valueOf(phone));
 
 		updatebutton.click();
+		return this;
 	}
 
 	public boolean isUpdateAlertDisplayed() {

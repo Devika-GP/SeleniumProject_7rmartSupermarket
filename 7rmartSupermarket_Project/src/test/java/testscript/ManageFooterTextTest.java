@@ -28,7 +28,7 @@ public class ManageFooterTextTest extends Base {
 		int phone = ExcelUtility.getIntegerData(1, 2, "footertext");
 
 		footertext = homepage.navigateToManageFooterTextPage();
-		footertext.editFooterText_edit2(address, email, phone);
+		footertext.clickEditFooterText().clearFooterTextFields().enterNewFooterText(address, email, phone);
 
 		boolean alertmessage = footertext.isUpdateAlertDisplayed();
 		Assert.assertTrue(alertmessage, Constant.MANAGEFOOTERTEXTERROR);

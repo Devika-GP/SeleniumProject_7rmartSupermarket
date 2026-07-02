@@ -30,7 +30,7 @@ public class ManageContactTest extends Base {
 		int deliverychargelimit = ExcelUtility.getIntegerData(1, 4, "contactpage");
 
 		contact = homepage.navigateToManageContactPage();
-		contact.editContact(phone, email, address, deliverytime, deliverychargelimit);
+		contact.clickEditButton().clearContactFields().updateNewContactInfo(phone, email, address, deliverytime, deliverychargelimit);
 
 		boolean alertmessage = contact.isUpdateAlertDisplayed();
 		Assert.assertTrue(alertmessage, Constant.MANAGECONTACTERROR);

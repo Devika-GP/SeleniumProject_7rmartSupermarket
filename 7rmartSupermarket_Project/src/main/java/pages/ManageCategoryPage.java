@@ -70,14 +70,6 @@ public class ManageCategoryPage {
 		return this;
 	}
 	
-	/*
-	 * public void createNewCategory(String category) { newbutton.click();
-	 * categoryname.sendKeys(category); pageutility.clickUsingJavaScript(driver,
-	 * selectgroup); fileuploadutility.fileUploadUsingSendkeys(fileselect,
-	 * Constant.CATEGORYIMAGEFILE); waitutility.waitForElementToBeClickable(driver,
-	 * savebutton); pageutility.clickUsingJavaScript(driver, savebutton); }
-	 */
-	
 	public boolean isCategorySavedAlertDisplayed() {
 		return alert.isDisplayed();
 	}

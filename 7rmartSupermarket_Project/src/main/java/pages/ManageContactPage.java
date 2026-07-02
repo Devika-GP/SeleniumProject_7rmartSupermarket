@@ -42,16 +42,23 @@ public class ManageContactPage {
 	/*
 	 * public void navigateToManageContactPage() { moreinfo.click(); }
 	 */
-
-	public void editContact(int phone, String email, String address, int deliverytime, int deliverychargelimit) {
+	
+	public ManageContactPage clickEditButton() {
 		editbutton.click();
-
-		// clearing necessary fields first
+		return this;
+	}
+	
+	public ManageContactPage clearContactFields() {
+		// clearing fields first
 		this.phone.clear();
 		this.email.clear();
 		this.address.clear();
 		this.deliverytime.clear();
 		this.deliverychargelimit.clear();
+		return this;
+	}
+
+	public ManageContactPage updateNewContactInfo(int phone, String email, String address, int deliverytime, int deliverychargelimit) {
 
 		// updating with new info
 		this.phone.sendKeys(String.valueOf(phone));
@@ -62,6 +69,7 @@ public class ManageContactPage {
 
 		//updatebutton.click();
 		pageutility.clickUsingJavaScript(driver, updatebutton);
+		return this;
 	}
 
 	public boolean isUpdateAlertDisplayed() {

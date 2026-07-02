@@ -28,7 +28,6 @@ public class ManageCategoryTest extends Base {
 		String categoryname = fakerutility.generateCategory();
 
 		category = homepage.navigateToManageCategoryPage();
-		//category.createNewCategory(categoryname);
 		category.clickNewButton().enterCategoryName(categoryname).selectGroup(driver).uploadImageFile().clickSaveButton(driver);
 
 		boolean alertmessage = category.isCategorySavedAlertDisplayed();
