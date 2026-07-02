@@ -19,7 +19,7 @@
 			<class name="testscript.ManageContactTest" />
 			<class name="testscript.ManageNewsTest" />
 			<class name="testscript.ManageFooterTextTest" />
-			<class name="testscript.LogoutTest" />
+			<class name="testscript.HomeTest" />
 		</classes>
 	</test> <!--
 	Test -->
